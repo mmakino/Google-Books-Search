@@ -1,6 +1,13 @@
 import React from 'react';
 import "./Book.css";
 
+//
+// Common component for Search(ed) and Saved book 
+// to render a single book
+//
+// * customize Save or Delete button depending on the page/route
+//   through props.buttonName
+//
 export default function Book(props) {
   const book = props.book;
 
@@ -19,7 +26,7 @@ export default function Book(props) {
           <button
             className="btn btn-primary mt-1"
             onClick={props.onClick}>
-            Save
+            {props.buttonName}
           </button>
         </div>
       </div>

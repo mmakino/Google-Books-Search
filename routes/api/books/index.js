@@ -30,7 +30,6 @@ router.post('/', (req, res) => {
     returnNewDocument: true
   })
   .then(doc => {
-    console.log(`Added ${doc}`);    
     res.json(doc);
   })
   .catch(err => res.json(err));
@@ -40,7 +39,11 @@ router.post('/', (req, res) => {
 // DELETE /api/books/:id
 //
 router.delete('/:id', (req, res) => {
-  res.json({ books: "DELETE books"});
+  db.Book.deleteOne({
+    _id: req.params.id
+  })
+  .then(result => res.json(result))
+  .catch(err => res.json(err));
 });
 
 // Export the router

@@ -1,11 +1,14 @@
 import React, { Component } from 'react'
 import Book from './Book';
 
-class Results extends Component {
+//
+// This is a common component for Search and Saved books
+//
+class Books extends Component {
   //
-  // Iterate through the search result books for rendering
+  // Iterate through the books for rendering
   //
-  renderSearchResults() {
+  renderBooks() {
     return (
       <div className="container">
         {
@@ -13,6 +16,7 @@ class Results extends Component {
             <div key={i.toString()}>
               <Book
                 book={book}
+                buttonName={this.props.buttonName}
                 onClick={() => this.props.onClick(i)}
               />
             </div>
@@ -23,15 +27,15 @@ class Results extends Component {
   }
 
   //
-  // Render search result books
+  // Render searched/saved books
   //
   render() {
     return (
-      <div className="container search-results mt-1 p-3">
-        {this.renderSearchResults()}
+      <div className="container books mt-1 p-3">
+        {this.renderBooks()}
       </div>
     )
   }
 }
 
-export default Results;
+export default Books;
