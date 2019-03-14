@@ -4,7 +4,9 @@ import axios from 'axios';
 import SearchInput from './Input';
 import SearchResults from '../common/Books';
 
-
+//
+// Search books using Google Books
+//
 class SearchBooks extends Component {
   constructor(props) {
     super(props);

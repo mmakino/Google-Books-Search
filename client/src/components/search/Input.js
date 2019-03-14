@@ -9,10 +9,14 @@ class Input extends Component {
         <form onSubmit={this.props.onSubmit}>
           <div className="fromGroup">
             <label htmlFor="search">Book Search</label>
-            <img 
-              src="./images/powered_by_google_on_white.png" 
-              alt="" className="float-right"
-            />
+            <a href="https://books.google.com/"
+              target="_blank"
+              rel="noopener noreferrer">
+              <img 
+                src="./images/powered_by_google_on_white.png" 
+                alt="" className="float-right"
+              />
+            </a>
             <input 
               type="text" 
               className="form-control" 

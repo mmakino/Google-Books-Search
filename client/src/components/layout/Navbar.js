@@ -1,10 +1,19 @@
 import React, { Component } from 'react'
 import { Link } from 'react-router-dom';
+import "./Navbar.css";
 
+//
+// Navbar
+//
+// == Links ==
+// * Google Books -- external https://books.google.com/
+// * Search -- GET Route "/"
+// * Saved  -- GET Route "/saved"
+//
 class Navbar extends Component {
   render() {
     return (
-      <nav className="navbar navbar-expand-sm navbar-dark bg-dark">
+      <nav className="navbar navbar-expand-sm">
         <a
           className="navbar-brand"
           href="https://books.google.com/"

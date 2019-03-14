@@ -7,7 +7,12 @@ import SearchBooks from './components/Search';
 import SavedBooks from './components/Saved';
 import './App.css';
 
-
+//
+// == App main page ==
+// 
+// With navbar menu switches btw Search and Saved books pages,
+// while the navbar and header banner stay the same for both.
+//
 class App extends Component {
   render() {
     return (

@@ -1,0 +1,24 @@
+/*
+  Navbar CSS
+*/
+
+nav {
+  background-color: #137;
+}
+
+.nav-link:focus {
+  color: cyan; 
+  /* text-decoration: underline; */
+  font-weight: bold;
+}
+
+.nav-link:active {
+  font-style: italic;
+  font: bold;
+}
+
+.nav-link:hover {
+  color: #4aaaa5;
+  text-decoration-color: #4aaaa5;
+  background-color: transparent;
+}
