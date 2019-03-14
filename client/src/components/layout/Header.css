@@ -1,0 +1,15 @@
+/* 
+  CSS for Header
+*/
+
+.jumbotron {
+  background: #cdf;
+}
+
+.title {
+  color: darkblue;
+}
+
+.lead {
+  color: blue;
+}

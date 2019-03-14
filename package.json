@@ -1,0 +1,36 @@
+{
+  "name": "google-books-search",
+  "version": "0.9.0",
+  "description": "React-based Google Books search app",
+  "main": "server.js",
+  "directories": {
+    "doc": "doc"
+  },
+  "scripts": {
+    "client-install": "npm install --prefix client",
+    "start": "node server.js",
+    "server": "nodemon server.js",
+    "client": "npm start --prefix client",
+    "devenv": "concurrently 'npm run server' 'npm run client'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mmakino/Google-Books-Search.git"
+  },
+  "author": "Motohiko Makino",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mmakino/Google-Books-Search/issues"
+  },
+  "homepage": "https://github.com/mmakino/Google-Books-Search#readme",
+  "dependencies": {
+    "axios": "^0.18.0",
+    "concurrently": "^4.1.0",
+    "dotenv": "^7.0.0",
+    "express": "^4.16.4",
+    "mongoose": "^5.4.19"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.10"
+  }
+}
