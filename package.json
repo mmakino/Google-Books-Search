@@ -13,8 +13,7 @@
     "client": "npm start --prefix client",
     "devenv": "concurrently 'npm run server' 'npm run client'",
     "install": "cd client && npm install",
-    "build": "cd client && npm run build",
-    "heroku-postbuild": "npm run build"
+    "build": "cd client && npm run build"
   },
   "repository": {
     "type": "git",
