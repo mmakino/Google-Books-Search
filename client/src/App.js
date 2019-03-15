@@ -3,8 +3,8 @@ import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 
 import Navbar from './components/layout/Navbar';
 import Header from './components/layout/Header';
-import SearchBooks from './components/search';
-import SavedBooks from './components/saved';
+import SearchBooks from './components/search/index';
+import SavedBooks from './components/saved/index';
 import './App.css';
 
 //
