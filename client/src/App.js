@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 
 import Navbar from './components/layout/Navbar';
 import Header from './components/layout/Header';
-import SearchBooks from './components/search';
+import SearchBooks from './components/Search';
 import SavedBooks from './components/Saved';
 import './App.css';
 
