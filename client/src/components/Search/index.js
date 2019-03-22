@@ -13,7 +13,6 @@ class SearchBooks extends Component {
     this.state = {
       search: "",  // search term
       books: [],   // search result books
-      errors: {}   // error messages
     };
     this.onChange = this.onChange.bind(this);
     this.onSubmit = this.onSubmit.bind(this);

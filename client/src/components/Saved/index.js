@@ -12,9 +12,15 @@ class Books extends Component {
     super(props);
     this.state = {
       books: [],   // saved books json data
-      errors: {}   // error messages
     };
     this.buttonName = 'Delete';
+  }
+
+  //
+  // Fetch the saved books upon loading
+  //
+  componentDidMount() {
+    this.savedBooks(); // Retrieve all saved books
   }
 
   //
@@ -52,8 +58,6 @@ class Books extends Component {
   // Render the page components
   //
   render() {
-    this.savedBooks(); // Retrieve all saved books
-
     return (
       <div className="saved-books">
 
